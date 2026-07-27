@@ -1,6 +1,6 @@
 # MEMS惯性传感器：人形机器人量产潮中最安静的瓶颈
 
-> **TIE Public Intelligence | 2026-07-28**
+> **TIE Public Intelligence | 2026-07-27**
 > 本文仅基于公开信息整理，不构成投资建议。所有数据可追溯至公开来源。
 
 ---
