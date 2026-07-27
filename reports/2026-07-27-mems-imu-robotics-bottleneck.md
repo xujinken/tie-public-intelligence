@@ -1,7 +1,8 @@
 # MEMS惯性传感器：人形机器人量产潮中最安静的瓶颈
 
 > **TIE Public Intelligence | 2026-07-27**
-> 本文仅基于公开信息整理，不构成投资建议。所有数据可追溯至公开来源。
+> 本文仅基于公开信息整理，不构成投资建议。
+> **勘误（2026-07-27）**：初版中 Top 5 市场份额误写为 63%，已更正为 Top 5 ≈ 58%（ReportPrime）；市场规模表述修正为多来源交叉标注；"标定瓶颈"结论降级为工作假说，待设备产能数据进一步验证。详见文末[来源分层](#附录来源分层与方法论)。
 
 ---
 
@@ -46,7 +47,7 @@ IMU（惯性测量单元）是机器人的"小脑"——负责感知自身在空
 
 ### 3.1 市场金字塔
 
-全球MEMS惯性传感器市场在2026年约47亿美元，呈典型的三层金字塔结构：[^5]
+全球MEMS惯性传感器市场呈典型的三层金字塔结构。2025年市场规模估算：Bosson Research $42.7亿，ReportPrime $42亿。2026年预测：ReportPrime $48.6亿。[^5]
 
 ```
         ┌──────────────────────┐
@@ -66,7 +67,7 @@ IMU（惯性测量单元）是机器人的"小脑"——负责感知自身在空
 
 **三个层次面临的瓶颈完全不同：**
 - 消费级：产能充足（士兰微国内加速度计市占20-30%），涨价压力最小
-- 战术/工业级：**这是瓶颈核心区域**——Bosch/ST/TDK三家占63%份额，产能集中在德国（Bosch德累斯顿300mm线）和意大利/法国（ST），扩产周期2-3年
+- 战术/工业级：**这是瓶颈核心区域**——Bosson Research 估算 Top 3（Bosch、ST、TDK）占约 63% 份额；ReportPrime 估算 Top 5 占约 58%。产能集中在德国（Bosch 德累斯顿300mm线）和意大利/法国（ST），扩产周期2-3年
 - 导航级：美欧ITAR管制，中国只有芯动联科一家能做到导航级精度
 
 ### 3.2 谁被卡住了？
@@ -81,7 +82,7 @@ IMU（惯性测量单元）是机器人的"小脑"——负责感知自身在空
 | 4 | Analog Devices | $780M | 工业/航空 | 高端定制为主 |
 | 5 | NXP | $610M | 汽车ADAS | — |
 
-**关键发现**：Top 5中没有一家中国公司上榜。然而，Top 5的产能优先供给汽车（单车需10-30个MEMS传感器）和消费电子（单款手机年产千万台级别）——**机器人产业的IMU订单体量尚小，在产能分配中处于劣势。**
+**关键发现**：Top 5 全部为欧洲和日本企业，中国公司最高排名为 MEMSIC（美新半导体，ReportPrime 列第8位）。Top 5 的产能优先供给汽车（单车需10-30个MEMS传感器）和消费电子（单款手机年产千万台级别）——**机器人产业的IMU订单体量尚小，在产能分配中处于劣势。**
 
 这正是26周交期的结构性原因：不是MEMS芯片总产能不足，而是**可分配给机器人客户的产能被汽车和消费电子挤占了。**
 
@@ -154,9 +155,9 @@ Two independent signals in July 2026 converge on a single finding: **MEMS inerti
 - **Signal 1:** China's top MEMS IDM manufacturers (China Resources Micro, Silan Micro) initiated 15%+ price hikes across all MEMS product lines on July 1. Order visibility reached 9 months, with lead times for hot models exceeding one year.
 - **Signal 2:** TechInsights reported on July 20 that lead times for high-precision ADC, low-power MCU, and MEMS sensor chips have extended to 26 weeks. Chinese domestic sensor module orders surged 37% month-over-month.
 
-**Why this matters:** Each humanoid robot requires 2–8 IMU modules for balance control, joint proprioception, and sensor fusion. At an estimated 50,000+ humanoid robots shipping in 2026, demand for 100,000–400,000 tactical-grade IMU modules is emerging — yet the global top 5 MEMS inertial suppliers (Bosch, ST, TDK, ADI, NXP) hold 63% market share and prioritize automotive and consumer electronics orders over robotics.
+**Why this matters:** Each humanoid robot requires 2–8 IMU modules for balance control, joint proprioception, and sensor fusion. At an estimated 50,000+ humanoid robots shipping in 2026, demand for 100,000–400,000 tactical-grade IMU modules is emerging — yet the global top 5 MEMS inertial suppliers (Bosch, ST, TDK, ADI, NXP) hold an estimated 58% market share (ReportPrime 2026) and prioritize automotive and consumer electronics orders over robotics.
 
-**The hidden chokepoint:** The real constraint is not MEMS chip fabrication, but **calibration capacity**. Every IMU module requires individual full-temperature-range (-40°C to +85°C) turntable calibration — a process that cannot be accelerated by wafer fab expansion. China's domestic IMU suppliers (Xindong Lianke, Silan Micro, Forsense, QST, Huayi Tech) are closing the performance gap, but calibration throughput will determine who captures the robotics demand window.
+**The hidden chokepoint (working hypothesis):** Our analysis suggests the binding constraint may not be MEMS chip fabrication, but **calibration throughput**. Every IMU module requires individual full-temperature-range (-40°C to +85°C) turntable calibration — a process that currently cannot be accelerated by wafer fab expansion. This hypothesis is based on manufacturing process logic; it has not been verified with equipment count, cycle time, or utilization data from calibration equipment suppliers. China's domestic IMU suppliers (Xindong Lianke, Silan Micro, Forsense, QST, Huayi Tech) are closing the performance gap, but calibration throughput will determine who captures the robotics demand window.
 
 **Key signals to watch (H2 2026–2027):** Bosch/ST/TDK dedicated robotics MEMS capacity announcements; domestic calibration equipment expansion; Hanwei Tech's new 9-axis IMU chip (HAU925, launched July 2026) customer adoption progress; Huayi Tech ARU series design-win status at major humanoid robot OEMs.
 
