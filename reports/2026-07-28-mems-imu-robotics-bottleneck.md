@@ -145,6 +145,23 @@ IMU（惯性测量单元）是机器人的"小脑"——负责感知自身在空
 
 ---
 
+---
+
+## Executive Summary
+
+Two independent signals in July 2026 converge on a single finding: **MEMS inertial sensors (IMUs) are emerging as the quietest bottleneck in the humanoid robotics manufacturing wave.**
+
+- **Signal 1:** China's top MEMS IDM manufacturers (China Resources Micro, Silan Micro) initiated 15%+ price hikes across all MEMS product lines on July 1. Order visibility reached 9 months, with lead times for hot models exceeding one year.
+- **Signal 2:** TechInsights reported on July 20 that lead times for high-precision ADC, low-power MCU, and MEMS sensor chips have extended to 26 weeks. Chinese domestic sensor module orders surged 37% month-over-month.
+
+**Why this matters:** Each humanoid robot requires 2–8 IMU modules for balance control, joint proprioception, and sensor fusion. At an estimated 50,000+ humanoid robots shipping in 2026, demand for 100,000–400,000 tactical-grade IMU modules is emerging — yet the global top 5 MEMS inertial suppliers (Bosch, ST, TDK, ADI, NXP) hold 63% market share and prioritize automotive and consumer electronics orders over robotics.
+
+**The hidden chokepoint:** The real constraint is not MEMS chip fabrication, but **calibration capacity**. Every IMU module requires individual full-temperature-range (-40°C to +85°C) turntable calibration — a process that cannot be accelerated by wafer fab expansion. China's domestic IMU suppliers (Xindong Lianke, Silan Micro, Forsense, QST, Huayi Tech) are closing the performance gap, but calibration throughput will determine who captures the robotics demand window.
+
+**Key signals to watch (H2 2026–2027):** Bosch/ST/TDK dedicated robotics MEMS capacity announcements; domestic calibration equipment expansion; Hanwei Tech's new 9-axis IMU chip (HAU925, launched July 2026) customer adoption progress; Huayi Tech ARU series design-win status at major humanoid robot OEMs.
+
+---
+
 **边界声明**：本文仅基于公开信息（企业官网、行业报告、供应链调研、政策文件）整理，不涉及任何企业内部信息，不构成投资建议或经营建议。所有结论均可追溯至公开来源。
 
 **关于 TIE**：TIE（Target Intelligence Engine）是一个基于公开信息的硬科技产业外部观察项目。我们追踪产业链关键瓶颈和结构性变化，为企业战略讨论提供可追溯的外部视角参考。如需针对特定赛道或企业的深度分析，请联系：sparrow.xujin@gmail.com
