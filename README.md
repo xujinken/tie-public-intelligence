@@ -52,7 +52,9 @@
 
 **联系**：sparrow.xujin@gmail.com
 
-**公众号**：硬科技外视角
+**Substack**：[Hardtech Outside View](https://hardtech-outside-view.substack.com)
+
+**公众号**：慢火观察笔记
 
 ---
 
